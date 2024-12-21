@@ -98,43 +98,46 @@
     color: white; /* Clock text color */
 }
 
-/* Styles for smaller screens (phones, tablets) */
-/* Styles for smaller screens (phones, tablets) */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
+    .navbar {
+        flex-direction: column; /* Stack the navbar items */
         align-items: center;
-        padding: 10px;
+        padding: 20px 0;
     }
 
-    .navbar ul li {
-        margin: 5px 0;
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .content h1 {
-        font-size: 24px;
+        font-size: 32px; /* Smaller font size for smaller screens */
     }
 
     .content p {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 16px; /* Adjust paragraph size */
+    }
+
+    #clock {
+        font-size: 0.9em; /* Smaller clock text */
     }
 }
 
 @media screen and (max-width: 480px) {
-    .navbar ul {
-        padding: 5px;
-    }
-
-    .navbar ul li a {
-        font-size: 14px;
-    }
-
     .content h1 {
-        font-size: 20px;
+        font-size: 24px; /* Further reduce font size for phones */
     }
 
     .content p {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .navbar {
+        width: 100%; /* Ensure navbar spans the screen */
+    }
+
+    #clock {
+        font-size: 0.8em;
     }
 }
