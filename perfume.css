@@ -60,3 +60,54 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .perfume-gallery {
+        padding: 30px 15px; /* Reduce padding */
+        background-size: cover; /* Adjust background scaling */
+    }
+    .perfume-gallery h2 {
+        font-size: 24px; /* Reduce font size */
+        margin-bottom: 15px; /* Adjust spacing */
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout */
+        gap: 20px; /* Reduce space between items */
+        max-width: 100%; /* Allow gallery to occupy full width */
+    }
+    .gallery-item {
+        max-width: 300px; /* Limit item size */
+    }
+    .gallery-item img {
+        width: 180px; /* Adjust image width */
+        height: 225px; /* Adjust image height */
+    }
+    .gallery-item p {
+        font-size: 18px; /* Reduce font size */
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 480px) {
+    .perfume-gallery {
+        padding: 20px 10px; /* Further reduce padding */
+        background-size: cover;
+    }
+    .perfume-gallery h2 {
+        font-size: 20px; /* Further reduce font size */
+        margin-bottom: 10px;
+    }
+    .gallery-grid {
+        gap: 15px; /* Further reduce space between items */
+    }
+    .gallery-item {
+        max-width: 250px; /* Further limit item size */
+    }
+    .gallery-item img {
+        width: 150px; /* Reduce image width */
+        height: 200px; /* Reduce image height */
+    }
+    .gallery-item p {
+        font-size: 16px; /* Further reduce font size */
+    }
+}
