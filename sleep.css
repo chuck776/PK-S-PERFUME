@@ -100,48 +100,67 @@
 
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
-    .sleepwear-gallery {
-        padding: 30px 10px;
-        background-size: cover; /* Adjust background image scaling */
+    .banner, .banner2 {
+        height: 70vh; /* Reduce banner height for smaller screens */
+        background-size: cover; /* Adjust background scaling */
     }
-    .sleepwear-gallery h2 {
-        font-size: 22px;
-        margin-bottom: 15px;
+    .navbar {
+        flex-wrap: wrap;
+        padding: 20px 10px;
     }
-    .gallery-grid {
-        grid-template-columns: 1fr; /* Single-column layout */
-        gap: 20px; /* Reduce spacing between items */
+    .navbar ul li {
+        margin: 0 10px;
     }
-    .gallery-item {
-        max-width: 90%; /* Adjust card width */
-        margin: 0 auto; /* Center cards */
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        gap: 10px; /* Adjust spacing */
+        justify-content: center;
     }
-    .gallery-item img {
-        width: 150px;
-        height: 200px;
+    .content {
+        top: 45%; /* Adjust centering */
+        transform: translateY(-10%);
+        padding: 0 10px; /* Add padding for smaller screens */
     }
-    .gallery-item p {
-        font-size: 18px;
-        padding: 8px 0;
+    .content h1 {
+        font-size: 32px; /* Reduce font size */
+        margin-top: 40px;
+    }
+    .content p {
+        font-size: 16px; /* Reduce font size */
+        line-height: 20px;
+    }
+    #clock {
+        font-size: 1em; /* Adjust clock size */
     }
 }
 
 /* Very small screens */
 @media screen and (max-width: 480px) {
-    .sleepwear-gallery {
-        padding: 20px 5px;
+    .banner, .banner2 {
+        height: 60vh; /* Further reduce banner height */
     }
-    .sleepwear-gallery h2 {
-        font-size: 18px;
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5px;
     }
-    .gallery-grid {
-        gap: 15px; /* Further reduce spacing for smaller screens */
+    .navbar ul li {
+        margin: 5px 0;
     }
-    .gallery-item img {
-        width: 120px;
-        height: 160px;
+    .content {
+        top: 40%; /* Further adjust centering */
+        padding: 0 5px; /* Add more padding for smaller screens */
     }
-    .gallery-item p {
-        font-size: 16px;
+    .content h1 {
+        font-size: 24px; /* Further reduce font size */
+        margin-top: 20px;
+    }
+    .content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #clock {
+        font-size: 0.9em; /* Further adjust clock size */
     }
 }
