@@ -199,86 +199,61 @@ nav ul li a:hover{
     transform: translateY(20px);
 
 }
-/* Responsive styles for smaller screens */
+/* Responsive Design for Phones */
 @media screen and (max-width: 768px) {
-    header {
-        padding: 0 10px;
-    }
     .header-inner {
         flex-direction: column;
         align-items: flex-start;
     }
+
     nav ul {
         flex-direction: column;
         gap: 15px;
     }
-    nav ul li a {
-        font-size: 16px;
+
+    nav ul li {
+        padding: 0 10px;
     }
+
     .content {
-        padding: 120px 10px 30px;
+        padding: 100px 15px 30px;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
-    .content h1 {
-        font-size: 36px;
-        line-height: 1.2;
-    }
-    .content p {
-        font-size: 16px;
-        line-height: 28px;
-    }
+
     .content .text {
         max-width: 100%;
         padding: 0;
     }
-    .content .banner-img {
-        margin-right: 0;
-        margin-top: 50px;
-        width: 100%;
-        max-width: 300px;
+
+    .content h1 {
+        font-size: 40px;
+        line-height: 60px;
     }
+
+    .content p {
+        font-size: 16px;
+    }
+
     .products {
-        flex-wrap: wrap;
-        justify-content: center;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
     }
+
     .products .card {
         width: 90%;
-        margin: 15px 0;
+        margin-bottom: 20px;
     }
-    .products h6 {
-        font-size: 16px;
-    }
-    .products h4 {
-        font-size: 20px;
-    }
-    .products a {
-        min-width: 120px;
-        height: 40px;
-        line-height: 38px;
-        font-size: 18px;
-    }
-}
 
-/* Very small screens */
-@media screen and (max-width: 480px) {
-    nav ul {
-        gap: 10px;
+    .products .img {
+        margin-top: -80px;
     }
-    nav ul li a {
-        font-size: 14px;
-    }
-    .content h1 {
-        font-size: 28px;
-    }
-    .content p {
-        font-size: 14px;
-    }
-    .content .banner-img {
-        max-width: 200px;
-    }
-    .products a {
-        font-size: 16px;
+
+    .products h6,
+    .products h4 {
+        text-align: center;
     }
 }
