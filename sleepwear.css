@@ -60,50 +60,46 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
-/* Responsive styles for smaller screens */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .sleepwear-gallery {
-        padding: 30px 10px;
-        background-size: cover; /* Adjust background image scaling */
+    .navbar {
+        flex-direction: column; /* Stack the navbar items */
+        align-items: center;
+        padding: 20px 0;
     }
-    .sleepwear-gallery h2 {
-        font-size: 22px;
-        margin-bottom: 15px;
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
     }
-    .gallery-grid {
-        grid-template-columns: 1fr; /* Single-column layout */
-        gap: 20px; /* Reduce spacing between items */
+
+    .content h1 {
+        font-size: 32px; /* Smaller font size for smaller screens */
     }
-    .gallery-item {
-        max-width: 90%; /* Adjust card width */
-        margin: 0 auto; /* Center cards */
+
+    .content p {
+        font-size: 16px; /* Adjust paragraph size */
     }
-    .gallery-item img {
-        width: 150px;
-        height: 200px;
-    }
-    .gallery-item p {
-        font-size: 18px;
-        padding: 8px 0;
+
+    #clock {
+        font-size: 0.9em; /* Smaller clock text */
     }
 }
 
-/* Very small screens */
 @media screen and (max-width: 480px) {
-    .sleepwear-gallery {
-        padding: 20px 5px;
+    .content h1 {
+        font-size: 24px; /* Further reduce font size for phones */
     }
-    .sleepwear-gallery h2 {
-        font-size: 18px;
+
+    .content p {
+        font-size: 14px;
     }
-    .gallery-grid {
-        gap: 15px; /* Further reduce spacing for smaller screens */
+
+    .navbar {
+        width: 100%; /* Ensure navbar spans the screen */
     }
-    .gallery-item img {
-        width: 120px;
-        height: 160px;
-    }
-    .gallery-item p {
-        font-size: 16px;
+
+    #clock {
+        font-size: 0.8em;
     }
 }
