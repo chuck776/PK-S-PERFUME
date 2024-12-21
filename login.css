@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkviolet;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+.header-inner{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 035px;
+}
+nav ul li :last-child{
+    padding-right: 0;
+}
+nav ul li a{
+   
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    transition: all ease 0.5s;
+}
+nav ul li a:before{
+    content: '';
+    position: absolute;
+    top: -22px;
+    right: 50%;
+    background: url(circular-text.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease 0.5s;
+}
+nav ul li a:hover:before{
+    opacity: 1;
+    transform: rotate(360deg);
+    transition: ease 1.5s;
+}
+nav ul li a:hover{
+    color: purple;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 150px 20px 50px;
+    color: #fff;
+    background: darkviolet;
+    
+    border-radius: 0 0 50px 50px;
+    overflow: hidden;
+    text-align: left;
+}
+.content h1{
+    font-size: 62px;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.content p{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Popping" sans-serif;
+}
+.content .text{
+    max-width: 50%;
+    flex: 1;
+    padding: 0 20px;
+}
+.content .img{
+    position: relative;
+    z-index: 9;
+}
+.content .banner-img{
+    margin-right: -165px;
+    margin-top: 125px;
+}
+.content .circular-text{
+    position: absolute;
+    top: 0;
+    right: 95px;
+    z-index: -1;
+    animation: circularText 12s linear infinite;
+}
+@keyframes circularText{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.products{
+    max-width: 63%;
+    display: flex;
+    justify-content: space-around;
+    margin: -100px 0 100px 85px;
+}
+.products .card{
+    width: 285px;
+    border-radius: 16px;
+    box-shadow: 0 10px 50px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    text-align: center;
+    
+    transition: transform 0.3 ease;
+}
+.products .img{
+    margin-top: -130px;
+    position: relative;
+    margin-bottom: 35px;
+    transition: all ease 0.5s;
+
+}
+.products .img:before{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 107px;
+    height: 14px;
+    background-color: #000;
+    border-radius: 100%;
+    filter: blur(23px);
+
+}
+.products .img:hover{
+    transform: translateY(15px);
+}
+.products h6{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: violet;
+    margin-bottom: 5px;
+
+}
+.products h4{
+    font-size: 24px;
+    font-weight: 700;
+}
+.products a{
+    display: inline-block;
+    min-width: 140px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: violet;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    box-shadow: 0 20px 40px rgb(187 98 45 / 40%);
+    transform: translateY(25px);
+    transition: all ease 0.5s;
+}
+.products a:hover{
+    background-color: #fff;
+    border-color: violet;
+    color: violet;
+    box-shadow: none;
+    transform: translateY(20px);
+
+}

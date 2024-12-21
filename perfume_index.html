@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" contents="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PK'S PERFUMES</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="icon" type="image/jpg" href="PK_logo.jpg">
+        <script src="https://kit.fontawesome.com/6a2ced4893.js" crossorigin="anonymous"></script>
+        <style>
+            .logo img{
+                height: 100px;
+                width: 100px;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header-inner">
+                    <div class="logo">
+                        <img src="logo_alt_PK.jpg" alt="Logo">
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html" class="scroll-link">Home</a></li>
+                                <li><a href="perfume_index.html" class="scroll-link">Perfumes</a></li>
+                                <li><a href="sleepwear.html" class="scroll-link">Sleepwear</a></li>
+                                <li><a href="contact.html" class="scroll-link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="text">
+                    <h1>Welcome to Pk's Perfumes that mesmerize your senses!</h1>
+                    
+                </div>
+                <div class="img">
+                    <div class="banner-img">
+                        <img src="banner-img.png" alt="banner">
+                    </div>
+                    <div class="circular-text">
+                        <img src="circular-text.svg" alt="circular-image">
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="card">
+                    <div class="img">
+                        <img src="barrakat_rouge.jpeg" alt="barakkat-female">
+                    </div>
+                    <div class="text">
+                        <h6>Top Selling Women's Perfume!</h6>
+                        <h4>Barakkat Rouge 540</h4>
+                    </div>
+                    <a href="women_perfume.html" class="scroll-link" >View More</a>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="barakkat_ambre.jpeg" alt="barakkat-male">
+                    </div>
+                    <div class="text">
+                        <h6>Top Selling Men's Perfume!</h6>
+                        <h4>Barakkat Ambre Eve</h4>
+                    </div>
+                    <a href="men_perfume.html" class="scroll-link">View More</a>
+                </div>
+              
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="index.js"></script>
+        <script>
+            gsap.from(".logo", {
+                duration: 1,
+                opacity: 0,
+                y: -100
+            })
+            gsap.from("nav ul li", {
+                duration: 1,
+                opacity: 0,
+                y: -100,
+                stagger: .2
+            })
+            gsap.from(".content .text > *", {
+                duration: 1,
+                opacity: 0,
+                y: 100,
+                stagger: .6,
+                delay:1.5
+            })
+            gsap.from(".products .card", {
+                duration: 1,
+                opacity: 0,
+                y: 100,
+                stagger: .6,
+                delay: 2
+            })
+            gsap.from(".content .img", {
+                duration: 3,
+                opacity: 0,
+                x: 300,
+                stagger: .6,
+                delay: 3
+            })
+        </script>
+    </body>
+</html>
