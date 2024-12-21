@@ -98,46 +98,50 @@
     color: white; /* Clock text color */
 }
 
-/* Responsive Design */
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Stack the navbar items */
-        align-items: center;
-        padding: 20px 0;
+    .sleepwear-gallery {
+        padding: 30px 10px;
+        background-size: cover; /* Adjust background image scaling */
     }
-
-    .navbar ul {
-        flex-direction: column;
-        gap: 10px;
+    .sleepwear-gallery h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
     }
-
-    .content h1 {
-        font-size: 32px; /* Smaller font size for smaller screens */
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+        gap: 20px; /* Reduce spacing between items */
     }
-
-    .content p {
-        font-size: 16px; /* Adjust paragraph size */
+    .gallery-item {
+        max-width: 90%; /* Adjust card width */
+        margin: 0 auto; /* Center cards */
     }
-
-    #clock {
-        font-size: 0.9em; /* Smaller clock text */
+    .gallery-item img {
+        width: 150px;
+        height: 200px;
+    }
+    .gallery-item p {
+        font-size: 18px;
+        padding: 8px 0;
     }
 }
 
+/* Very small screens */
 @media screen and (max-width: 480px) {
-    .content h1 {
-        font-size: 24px; /* Further reduce font size for phones */
+    .sleepwear-gallery {
+        padding: 20px 5px;
     }
-
-    .content p {
-        font-size: 14px;
+    .sleepwear-gallery h2 {
+        font-size: 18px;
     }
-
-    .navbar {
-        width: 100%; /* Ensure navbar spans the screen */
+    .gallery-grid {
+        gap: 15px; /* Further reduce spacing for smaller screens */
     }
-
-    #clock {
-        font-size: 0.8em;
+    .gallery-item img {
+        width: 120px;
+        height: 160px;
+    }
+    .gallery-item p {
+        font-size: 16px;
     }
 }
